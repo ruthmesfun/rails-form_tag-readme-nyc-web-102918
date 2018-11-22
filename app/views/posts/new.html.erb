@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <%= form_tag posts_path do %>
+        <label>Post title:</label><br>
+        <%=text_field_tag :'post[title]' %>
+       
+        <label>Post description:</label><br>
+        <%=text_field_tag :'post[description]' %>
+
+
+        <input type="submit" value="Submit Post">
+    <%end%>
+</body>
+</html>
